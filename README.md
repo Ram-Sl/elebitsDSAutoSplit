@@ -7,4 +7,4 @@ It will split everytime you enter a new world. So you should set up your splits 
 ![image](https://github.com/Ram-Sl/elebitsDSAutoSplit/assets/89742923/bcd80e18-613e-4458-8216-5f170cc19cef)
 
 
-It should finish when the screen turns black for the credits, but doesn't currently work.
+It should finish when the screen turns black for the credits, but doesn't currently consistently work.
