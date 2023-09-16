@@ -13,6 +13,7 @@ init
 start
 {
 	if(current.zone == 1 && current.health == 0){
+		vars.splitCount = 0;
 		return true;
 	}
 }
