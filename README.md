@@ -3,4 +3,5 @@ This a script for liveSplit's Scriptable Auto Splitter for the game Elebits the 
 
 This is designed for 7 splits (One for each world).
 It will start when you load the game.
+
 It should finish when the screen turns black for the credits, but isn't perfect.
