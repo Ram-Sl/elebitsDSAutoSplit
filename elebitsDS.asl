@@ -3,7 +3,7 @@ state("DeSmuME_0.9.11_x64")
 	int zone: 0x44A848, 0x55C;
 	int health: 0x44A848, 0x1B0;
 	int face: 0x44A848, 0x230;
-	int black: 0x08A3C258, 0xE8C;
+	int black: 0x08A3C258, 0xF34;
 }
 init
 {
@@ -42,7 +42,7 @@ split
 		vars.splitCount = vars.splitCount + 1;
 		return true;
 	}
-	if(current.zone == 112 && vars.splitCount == 6 && current.face == 2 && current.black == 1){
+	if(current.zone == 112 && vars.splitCount == 6 && current.face == 2 && current.black == 0){
 		return true;
 	}
 }
