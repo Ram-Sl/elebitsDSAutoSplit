@@ -4,6 +4,7 @@ state("DeSmuME_0.9.11_x64")
 	int health: 0x44A848, 0x1B0;
 	int face: 0x44A848, 0x230;
 	int black: 0x08A3C258, 0xF34;
+	int blackPost: 0x08A3C258, 0xF04;
 }
 init
 {
@@ -44,6 +45,9 @@ split
 		return true;
 	}
 	if(current.zone == 112 && vars.splitCount == 6 && current.face == 2 && current.black == 0){
+		vars.splitCount = vars.splitCount + 1;
+	}
+	if(vars.splitCount == 7 && current.blackPost == 34878140){
 		return true;
 	}
 }
