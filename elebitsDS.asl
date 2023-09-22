@@ -32,7 +32,7 @@ split
 		vars.splitCount = vars.splitCount + 1;
 		return true;
 	}
-	if(current.zone == 126 && vars.splitCount == 3){
+	if(current.zone == 125 && vars.splitCount == 3){
 		vars.splitCount = vars.splitCount + 1;
 		return true;
 	}
