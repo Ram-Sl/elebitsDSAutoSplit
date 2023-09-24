@@ -5,6 +5,7 @@ state("DeSmuME_0.9.11_x64")
 	int face: 0x44A848, 0x230;
 	int black: 0x08A3C258, 0xF34;
 	int blackPost: 0x08A3C258, 0xF04;
+	int newBlack: 0x08A3C258, 0xF7C;
 }
 init
 {
@@ -44,10 +45,8 @@ split
 		vars.splitCount = vars.splitCount + 1;
 		return true;
 	}
-	if(current.zone == 112 && vars.splitCount == 6 && current.face == 2 && current.black == 0){
+	if(current.zone == 112 && vars.splitCount == 6 && current.face == 2 && current.newBlack == 5){
 		vars.splitCount = vars.splitCount + 1;
-	}
-	if(vars.splitCount == 7 && current.blackPost == 34878140){
 		return true;
 	}
 }
